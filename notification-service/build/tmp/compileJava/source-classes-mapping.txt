@@ -1,2 +1,10 @@
+com/javastart/notification/config/RabbitMQConfig.java
+ com.javastart.notification.config.RabbitMQConfig
+com/javastart/notification/service/DepositResponseDTO.java
+ com.javastart.notification.service.DepositResponseDTO
+com/javastart/notification/service/DepositMessageHandler.java
+ com.javastart.notification.service.DepositMessageHandler
 com/javastart/notification/NotificationApplication.java
  com.javastart.notification.NotificationApplication
+com/javastart/notification/config/MailConfig.java
+ com.javastart.notification.config.MailConfig
