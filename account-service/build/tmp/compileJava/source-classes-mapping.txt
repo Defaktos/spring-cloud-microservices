@@ -10,7 +10,7 @@ com/javastart/account/controller/dto/AccountResponseDTO.java
  com.javastart.account.controller.dto.AccountResponseDTO
 com/javastart/account/AccountApplication.java
  com.javastart.account.AccountApplication
-com/javastart/account/entity/Account.java
- com.javastart.account.entity.Account
 com/javastart/account/controller/AccountController.java
  com.javastart.account.controller.AccountController
+com/javastart/account/entity/Account.java
+ com.javastart.account.entity.Account
