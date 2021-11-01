@@ -1,0 +1,6 @@
+com/javastart/depositservice/service/DepositServiceTest.java
+ com.javastart.depositservice.service.DepositServiceTest
+com/javastart/depositservice/config/SpringH2DatabaseConfig.java
+ com.javastart.depositservice.config.SpringH2DatabaseConfig
+com/javastart/depositservice/controller/DepositControllerTest.java
+ com.javastart.depositservice.controller.DepositControllerTest

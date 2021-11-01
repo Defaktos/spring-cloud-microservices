@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.javastart.depositservice.controller.DepositControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-01T14:18:36" hostname="DIMAPC" time="0.666">
+  <properties/>
+  <testcase name="createDeposit" classname="com.javastart.depositservice.controller.DepositControllerTest" time="0.666"/>
+  <system-out><![CDATA[21:18:16.489 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.javastart.depositservice.controller.DepositControllerTest]
+21:18:16.489 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.javastart.depositservice.controller.DepositControllerTest]
+21:18:16.491 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.javastart.depositservice.controller.DepositControllerTest]
+21:18:16.491 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.javastart.depositservice.controller.DepositControllerTest]
+21:18:16.501 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2b759b25 testClass = DepositControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3eb1a65f testClass = DepositControllerTest, locations = '{}', classes = '{class com.javastart.deposit.DepositApplication, class com.javastart.depositservice.config.SpringH2DatabaseConfig, class com.javastart.deposit.DepositApplication, class com.javastart.depositservice.config.SpringH2DatabaseConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6c4092fd, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5e04c852, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@54677120, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@bebef72e, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@37a5dccc, org.springframework.boot.test.context.SpringBootTestArgs@1], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+21:18:16.503 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.javastart.depositservice.controller.DepositControllerTest]
+21:18:16.504 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.javastart.depositservice.controller.DepositControllerTest]
+21:18:16.543 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.2.RELEASE)
+
+2021-11-01 21:18:20.174  INFO [,,,] 9920 --- [    Test worker] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2021-11-01 21:18:22.402  INFO [,,,] 9920 --- [    Test worker] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-11-01 21:18:22.402  WARN [,,,] 9920 --- [    Test worker] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/application/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2021-11-01 21:18:22.411  INFO [,,,] 9920 --- [    Test worker] c.j.d.controller.DepositControllerTest   : No active profile set, falling back to default profiles: default
+2021-11-01 21:18:23.705  INFO [,,,] 9920 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-11-01 21:18:24.009  INFO [,,,] 9920 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 289ms. Found 1 JPA repository interfaces.
+2021-11-01 21:18:24.590  INFO [,,,] 9920 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=93779353-d12c-35c3-8472-d592cec305d7
+2021-11-01 21:18:26.640  INFO [,,,] 9920 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-01 21:18:26.835  INFO [,,,] 9920 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-01 21:18:27.165  INFO [,,,] 9920 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-01 21:18:27.347  INFO [,,,] 9920 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-01 21:18:27.507  INFO [,,,] 9920 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2021-11-01 21:18:27.646  INFO [,,,] 9920 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-11-01 21:18:27.953  WARN [,,,] 9920 --- [    Test worker] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2021-11-01 21:18:27.962  WARN [,,,] 9920 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-11-01 21:18:27.962  INFO [,,,] 9920 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-01 21:18:27.979  WARN [,,,] 9920 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-11-01 21:18:27.979  INFO [,,,] 9920 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-01 21:18:28.065  INFO [,,,] 9920 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-11-01 21:18:28.358  WARN [,,,] 9920 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-01 21:18:29.392  INFO [,,,] 9920 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-01 21:18:29.410  INFO [,,,] 9920 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-01 21:18:32.383  INFO [,,,] 9920 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2021-11-01 21:18:33.800  INFO [,,,] 9920 --- [    Test worker] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-11-01 21:18:35.033  INFO [,,,] 9920 --- [    Test worker] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-11-01 21:18:35.121  WARN [,,,] 9920 --- [    Test worker] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-11-01 21:18:35.908  INFO [,,,] 9920 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-11-01 21:18:36.034  INFO [,,,] 9920 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-11-01 21:18:36.608  INFO [,,,] 9920 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-11-01 21:18:36.632  INFO [,,,] 9920 --- [    Test worker] c.j.d.controller.DepositControllerTest   : Started DepositControllerTest in 20.066 seconds (JVM running for 21.872)
+2021-11-01 21:18:36.886  INFO [,,,] 9920 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-11-01 21:18:36.887  INFO [,,,] 9920 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-11-01 21:18:36.946  INFO [,,,] 9920 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 59 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

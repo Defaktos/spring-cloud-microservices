@@ -1,25 +1,25 @@
 com/javastart/deposit/entity/Deposit.java
  com.javastart.deposit.entity.Deposit
-com/javastart/deposit/rest/BillServiceClient.java
- com.javastart.deposit.rest.BillServiceClient
+com/javastart/deposit/rest/BillResponseDTO.java
+ com.javastart.deposit.rest.BillResponseDTO
 com/javastart/deposit/controller/dto/DepositRequestDTO.java
  com.javastart.deposit.controller.dto.DepositRequestDTO
 com/javastart/deposit/controller/dto/DepositResponseDTO.java
  com.javastart.deposit.controller.dto.DepositResponseDTO
-com/javastart/deposit/rest/AccountResponseDTO.java
- com.javastart.deposit.rest.AccountResponseDTO
-com/javastart/deposit/rest/BillResponseDTO.java
- com.javastart.deposit.rest.BillResponseDTO
-com/javastart/deposit/exception/DepositServiceException.java
- com.javastart.deposit.exception.DepositServiceException
-com/javastart/deposit/repository/DepositRepository.java
- com.javastart.deposit.repository.DepositRepository
-com/javastart/deposit/rest/AccountServiceClient.java
- com.javastart.deposit.rest.AccountServiceClient
-com/javastart/deposit/rest/BillRequestDTO.java
- com.javastart.deposit.rest.BillRequestDTO
 com/javastart/deposit/DepositApplication.java
  com.javastart.deposit.DepositApplication
+com/javastart/deposit/rest/BillRequestDTO.java
+ com.javastart.deposit.rest.BillRequestDTO
+com/javastart/deposit/exception/DepositServiceException.java
+ com.javastart.deposit.exception.DepositServiceException
+com/javastart/deposit/rest/AccountResponseDTO.java
+ com.javastart.deposit.rest.AccountResponseDTO
+com/javastart/deposit/rest/AccountServiceClient.java
+ com.javastart.deposit.rest.AccountServiceClient
+com/javastart/deposit/rest/BillServiceClient.java
+ com.javastart.deposit.rest.BillServiceClient
+com/javastart/deposit/repository/DepositRepository.java
+ com.javastart.deposit.repository.DepositRepository
 com/javastart/deposit/controller/DepositController.java
  com.javastart.deposit.controller.DepositController
 com/javastart/deposit/service/DepositService.java
