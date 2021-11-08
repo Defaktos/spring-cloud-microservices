@@ -1,14 +1,6 @@
 # spring-cloud-microservices
 Spring Boot Microservices Project
 
-
-<p align="center">
-<a href="https://ibb.co/bsNd2dW"><img src="https://i.ibb.co/zXPf7fn/Duke-Java-mascot-waving-svg.png" alt="Duke-Java-mascot-waving-svg" border="0" width="100"></a>
-  <img src="https://seeklogo.com/images/S/spring-logo-9A2BC78AAF-seeklogo.com.png" width="140">
-</p>
-
-# SpringCloud Bank Microservices
-
 Java Spring Cloud application for making transfers, deposits and payments as Bank System
 
 ### Main capabilities: 
