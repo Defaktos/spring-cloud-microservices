@@ -56,7 +56,6 @@ Id}| add new bills to account |  *bills* (additional list of bills)
 | **POST** | deposits/| make deposit | *account_id* OR *bill_id*, *amount*
 | **GET** | deposits/{depositId}| get deposit information by id |
 | **GET** | deposits/bill/{billId}| get deposits information by bill id |
-| `transfer-service (port 5431)`|
 
 
 ### How to start
