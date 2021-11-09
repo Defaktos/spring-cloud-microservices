@@ -1,13 +1,12 @@
 # spring-cloud-microservices
 Spring Boot Microservices Project
 
-Java Spring Cloud application for making transfers, deposits and payments as Bank System
+Java Spring Cloud application for making deposits as Bank System
 
 ### Main capabilities: 
 * Create person account
 * Create a bill owned by account 
-* Make deposits and payments to/from bill (with email notification)
-* Transfer funds from one bill to another bill (with email notification to both accounts)
+* Make deposits to/from bill (with email notification)
 
 ### Tags
 - Spring 
@@ -53,19 +52,12 @@ Id}| add new bills to account |  *bills* (additional list of bills)
 | **GET** | bills/account{accountId}| get bills information by account id | 
 | **PUT** | bills/{ billId}| update account | *account_id*, *bill_id*(value doesn't affect), *amount*, *is_default*, *is_overdraft_enabled*  
 | **DELETE** | bills/{ billId}| delete account |
-| `deposit-service (port 9090)`|
+| `deposit-service (port 9999)`|
 | **POST** | deposits/| make deposit | *account_id* OR *bill_id*, *amount*
 | **GET** | deposits/{depositId}| get deposit information by id |
 | **GET** | deposits/bill/{billId}| get deposits information by bill id |
-| `payment-service (port 9876)`|
-| **POST** | payments/| make payment | *account_id* OR *bill_id*, *amount*
-| **GET** | payments/{paymentId}| get payment information by id |
-| **GET** | payments/bill/{billId}| get payments information by bill id |
 | `transfer-service (port 5431)`|
-| **POST** | transfers/| make transfer | *sender_bill_id* OR *sender_account_id*, *recipient_bill_id* OR *recipient_account_id*, *amount*
-| **GET** | transfers/{transferId}| get transfer information by id |
-| **GET** | transfers/sender/{senderBillId}| get transfers information by sender bill id |
-| **GET** | transfers/recipient/{recipientBillId}| get transfers information by recipient bill id |
+
 
 ### How to start
 
@@ -111,17 +103,15 @@ You can tune PostgreSQL access setting:
 -Your password and username (default: postgres/admin).
 
 -Name of pre-created databases. You can create database with the same name -> at this case you don't need to change 
-database name (default name: account_service_database; bill_service_database, deposit_service_database,
-payment_service_database, transfer_service_database).
+database name (default name: account_service_database; bill_service_database, deposit_service_database).
 
 -Port of your database (default: 5432).
 
 ###### 2.  It is allowed to start application from docker (if there is no need to start application from docker go to step 3) :
 *It is required to install Docker.*
 
-a) This application contains Dockerfile at each microservice package. One line in this files at account, bill, deposit,
-payment and transfer services depends on the name of database and wireless network adapter ip. This is DATASOURCE_URL
-variable. Default ip is 192.168.1.55, database names according b)5).
+a) This application contains Dockerfile at each microservice package. One line in this files at account, bill and deposit services depends on the name of database and wireless network adapter ip. This is DATASOURCE_URL
+variable. Default ip is 192.168.0.97, database names according b)5).
 You can find your wireless network adapter ip by command line:
 C:\Users>ipconfig -> database and wireless network adapter ip -> IPv4-adress
 
@@ -145,15 +135,15 @@ b) Run command "docker run -p 15672:15672 -p 5672:5672 rabbitmq:3-management"
 c) Launch Application.java in  the following sequence:
 `ConfigApplication` -> `RegistryApplication` -> `GatewayApplication` ->
 `AccountApplication` -> `BillApplication` -> `NotificationApplication` ->
-`DepositApplication` -> `PaymentApplication` -> `TransferApplication`
+`DepositApplication`
 
 ### Necessary steps with JSON examples:
 ###### 1. Create account :
 
 
     {
-        "name" : "Pavel",
-        "email" : "example@mail.do",
+        "name" : "Dima",
+        "email" : "example@gmail.com",
         "phone" : "+123456789",
         "bills" : [ 1,3,5 ]
     }
@@ -173,20 +163,13 @@ c) Launch Application.java in  the following sequence:
         "is_overdraft_enabled" : false 
     }
 
-###### After first and second steps you can make deposits, payments or transfers(if you have at least two bills):
+###### After first and second steps you can make deposits (if you have at least two bills):
 
-    Deposit or payment:
+    Deposit:
     {
         "account_id" : 1,
         "bill_id" : 3,
         "amount" : 5000
-    }
-    
-    Transfer:
-    {
-        "sender_account_id" : 1,
-        "recipient_bill_id" : 10,
-        "amount" : 1500.50
     }
 
 
