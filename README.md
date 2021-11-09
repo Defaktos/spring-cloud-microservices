@@ -23,10 +23,6 @@ Java Spring Cloud application for making deposits as Bank System
 - Ribbon
 - Docker
 
-## Architecture
- <p>
-  <a href="https://ibb.co/7n81mXs"><img src="https://i.ibb.co/N9QyBsc/architecture.png" alt="architecture" border="0" /></a>
-</p>
 
 *Description:`Configuration service` (Spring Cloud Config release) contains configuration information about all the rest microservices.
 `Discovery service` (Eureka from Netflix) performs the functions of service discovery, registration of service addresses and their instances.
